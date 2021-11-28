@@ -1,0 +1,153 @@
+:root{
+    --main-color: #CD27D8;
+    --wrong-color: red;
+    --valid-color: #32D827;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: grey;
+}
+/* Div stylers */
+div.header{
+    padding-bottom: 120px; 
+}
+div.blackFade{
+    background-color: black;
+    width:10000000000000000000px; 
+    height:10000000000000000000px;
+    opacity: 0.5;
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: none;
+    z-index: 1;
+}
+div.popup{
+    position: fixed;
+    display: none;
+    left: calc(50% - 200px);
+    width: 400px;
+    background-color: white;
+    height: 450px;
+    z-index: 2;
+}
+
+div.signIn{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 85%;
+
+}
+/* ul stylers */
+ul.navBar{
+    position: fixed;
+    opacity: 1;
+    top:0;
+    left:0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    box-shadow: 10px 10px 5px grey;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #CD27D8;
+}
+/* li stylers */
+li.navButtonHolder{
+    float: right;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+/* button stylers */
+.navGenericButton{
+    background-color: #32D827;
+    border: none;
+    color:white;
+    padding: 14px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition: background-color 0.25s ease;
+    font-size: 16px;
+}
+
+.navGenericButton:hover{
+    background-color: #d86e27;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navGenericButton2{
+    background-color: coral;
+    border: none;
+    color:white;
+    padding: 14px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition: background-color 0.25s ease;
+    font-size: 16px;
+}
+.navGenericButton2:hover{
+    background-color: #CD27D8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* form input stylers */
+input[type=text]{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    padding-left: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+}
+
+input[type=password]{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    padding-left: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* form labels */
+.formLabels{
+    display: block;
+}
+/* form element */
+form.signInForm{
+    width: 100%;
+}
+
+/* Label styling */
+.signInFormLabel{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: bold;
+    top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 35%;
+
+}
+
+.paintArea{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+}
