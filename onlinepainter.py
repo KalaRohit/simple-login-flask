@@ -7,4 +7,4 @@ def main_page():
         user = request.form['username']
         password = request.form['password']
         print(user, password)
-    return render_template("basepage.html")
+    return render_template("userNotLoggedIn.html")

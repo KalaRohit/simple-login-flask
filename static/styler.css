@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: grey;
+    background-color: rgb(216, 207, 207);
 }
 /* Div stylers */
 div.header{
@@ -36,9 +36,24 @@ div.signIn{
     position: absolute;
     top: 25%;
     left: 10%;
-    width: 85%;
+    width: 80%;
 
 }
+div.purpleTransisition{
+    position: relative;
+    display: none;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #CD27D8;
+    z-index: 5;
+
+}
+div.purplseTransistion.fadeIn{
+    transition: 1s;
+    display: blocks;
+}
+
 /* ul stylers */
 ul.navBar{
     position: fixed;

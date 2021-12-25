@@ -20,5 +20,8 @@ function signInFormValidation(){
 }
 
 function transitionToSignUp(){
+    transistion = document.getElementById("purpleTransisition");
+    transistion.classList.add('fadeIn');
     
+    return false;
 }
