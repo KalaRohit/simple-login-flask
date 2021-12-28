@@ -5,6 +5,7 @@
 <div class="header">
     <ul class="navBar">
         <li class="navButtonHolder">
+            <button>Back</button>
         </li>
     </ul>
 </div>
@@ -12,6 +13,16 @@
     <h1>Sign Up</h1>
 </div>
 <div class="signUpBox">
-    testtest
+    <form name="signUpForm" id="signUpForm" onsubmit="return signUpFormValidation()">
+        <label>Username:</label>
+        <input type="text">
+        <label>Email:</label>
+        <input type="text">
+        <label>Password:</label>
+        <input type="password">
+        <label>Verify password:</label>
+        <input type="password">
+        <input class="navGenericButton" style="width: 100%;" type="submit">
+    </form>
 </div>
 {% endblock %}
