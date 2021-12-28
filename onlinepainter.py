@@ -28,3 +28,6 @@ def sign_up_page():
 
 def user_logged_in():
     return "HelloWorld"
+
+if __name__ == "__main__":
+    app.run(debug=True)
