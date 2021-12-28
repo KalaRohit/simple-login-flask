@@ -1,0 +1,37 @@
+{% extends 'basepage.html' %}
+{% block head %}
+{% endblock %}
+{% block body %}
+    <!-- Nav Bar -->
+    <div class="header">
+        <ul class="navBar">
+            <li class="navButtonHolder">
+                <button class="navGenericButton" onclick="bringInForm()"> Sign In</button>
+            </li>
+            <li class="navButtonHolder">
+                <button class="navGenericButton" onclick="bringUpForm()"> <a class="signUp" href="/signUp"> Sign Up</a> </button>
+            </li>
+        </ul>
+    </div>
+    <!-- Sign In form -->
+    <div id="popup" class="popup">
+        <div class="signInFormLabel">Sign In</div>
+        <div id="signIn" class="signIn">
+            <form name="signInForm" class="signInForm" id="signInForm" action="http://127.0.0.1:5000/" onsubmit="return signInFormValidation()" autocomplete="off" method="POST">
+                <label class="formLabels">Username</label>
+                <input id="username" name="username" type="text" placeholder="Username goes here..."><br>
+                <label class="formLabels">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password goes here..."><br>
+                <input class="navGenericButton" style="width: 100%;" type="submit">
+            </form>
+        </div>
+        <!-- Transition from sign in to sign up element -->
+        </div>
+    </div>
+    <!-- black fade out effect -->
+    <div id="blackFade" class="blackFade" onclick="hideForms()">
+    </div>
+    <!--  Main Body -->
+    <div class="toolBox" id="toolBox"></div>
+    <canvas class="paintArea" id="paintArea"> </canvas>
+{% endblock %}
