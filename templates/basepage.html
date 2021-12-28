@@ -6,41 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    {% block head %}{% endblock %}
 </head>
 <body>
-    <!-- Nav Bar -->
-    <div class="header">
-        <ul class="navBar">
-            <li class="navButtonHolder">
-                <button class="navGenericButton" onclick="bringUpForm()"> Sign In</button>
-            </li>
-        </ul>
-    </div>
-    <!-- login form -->
-    <div id="popup" class="popup">
-        <div class="signInFormLabel">Sign In</div>
-        <div id="signIn" class="signIn">
-            <form name="signInForm" class="signInForm" id="signInForm" action="http://127.0.0.1:5000/" onsubmit="return signInFormValidation()" autocomplete="off" method="POST">
-                <label class="formLabels">Username</label>
-                <input id="username" name="username" type="text" placeholder="Username goes here..."><br>
-                <label class="formLabels">Password</label>
-                <input id="password" name="password" type="password" placeholder="Password goes here..."><br>
-                <input class="navGenericButton" style="width: 100%;" type="submit">
-                <button class="navGenericButton2" style="width: 100%; margin-top: 5px" onclick="transitionToSignUp()">Sign Up</button> <br>
-            </form>
-        </div>
-        <!-- Transition from sign in to sign up element -->
-        <div id="purpleTransisition" class="purpleTransisition">
-        </div>
-        <!-- Sign up form -->
-        <div id="signUp" class="signUp">
-        </div>
-    </div>
-    <!-- black fade out effect -->
-    <div id="blackFade" class="blackFade" onclick="hideForms()">
-    </div>
-    <!--  Main Body -->
-    <div class="toolBox" id="toolBox"></div>
-    <canvas class="paintArea" id="paintArea"> </canvas>
+    {% block body %}{% endblock %}
 </body>
 </html>
