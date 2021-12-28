@@ -1,4 +1,4 @@
-function bringUpForm(){
+function bringInForm(){
     //commonly accessed elements
     blackFade = document.getElementById("blackFade");
     popupForm = document.getElementById("popup");
@@ -10,6 +10,7 @@ function hideForms(){
     //commonly accessed elements
     blackFade = document.getElementById("blackFade");
     popupForm = document.getElementById("popup");
+    signUpPopupForm = document.getElementById("signUpPopup");
     popupForm.style.display="none";
     blackFade.style.display="none";
 }
@@ -17,11 +18,4 @@ function hideForms(){
 function signInFormValidation(){
     console.log("test");
 
-}
-
-function transitionToSignUp(){
-    transistion = document.getElementById("purpleTransisition");
-    transistion.classList.add('fadeIn');
-    
-    return false;
 }

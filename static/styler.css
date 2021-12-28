@@ -53,6 +53,16 @@ div.purplseTransistion.fadeIn{
     transition: 1s;
     display: blocks;
 }
+div.signUpHeader{
+    display: block;
+    text-align: center;
+}
+div.signUpBox{
+    display: block;
+    color: ##CFD8D8;
+    width: 500px;
+    height: 500px;
+}
 
 /* ul stylers */
 ul.navBar{
@@ -61,6 +71,7 @@ ul.navBar{
     top:0;
     left:0;
     width: 100%;
+    height: 75px;
     list-style-type: none;
     margin: 0;
     padding:0;
@@ -165,4 +176,18 @@ form.signInForm{
     background-color: white;
     width: 500px;
     height: 300px;
+}
+/* a stylers */
+a.signUp{
+    text-decoration: none;
+    color: white;
+}
+a.signUp::after{
+    text-decoration: none;
+    color: white;
+}
+
+a.signUp:link{
+    text-decoration: none;
+    color: white;
 }
