@@ -9,7 +9,7 @@
                 <button class="navGenericButton" onclick="bringInForm()"> Sign In</button>
             </li>
             <li class="navButtonHolder">
-                <button class="navGenericButton" onclick="bringUpForm()"> <a class="signUp" href="/signUp"> Sign Up</a> </button>
+                <a class="signUp" href="/signUp"> Sign Up</a>
             </li>
         </ul>
     </div>
@@ -19,12 +19,11 @@
         <div id="signIn" class="signIn">
             <form name="signInForm" class="signInForm" id="signInForm" action="http://127.0.0.1:5000/" onsubmit="return signInFormValidation()" autocomplete="off" method="POST">
                 <label class="formLabels">Username</label>
-                <input id="username" name="username" type="text" placeholder="Username goes here..."><br>
+                <input id="username" name="username" type="text" placeholder="Username goes here..." required><br>
                 <label class="formLabels">Password</label>
-                <input id="password" name="password" type="password" placeholder="Password goes here..."><br>
+                <input id="password" name="password" type="password" placeholder="Password goes here..." required><br>
                 <input class="navGenericButton" style="width: 100%;" type="submit">
             </form>
-        </div>
         </div>
     </div>
     <!-- black fade out effect -->

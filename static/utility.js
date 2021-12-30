@@ -17,10 +17,25 @@ function hideForms(){
 
 function signInFormValidation(){
     console.log("test");
-    return true;
+    return false;
 
 }
 
-function signUpFormValidation(){
+function signUpFormValidation(){ 
+    unameField = document.forms["signUpForm"]["uname"].value;
+    emailField = document.forms["signUpForm"]["email"].value;
+    pwordField = document.forms["signUpForm"]["pword1"].value;
+    verifyField = document.forms["signUpForm"]["pword2"].value;
+    errorField = document.getElementById("errorMessage");
+    console.log(unameField.innerHTML);
+    if(emailField.indexOf("@") == -1 || emailField.indexOf(".") == -1){
+        errorField.innerHTML = "Please enter a valid email address!"
+        return false;
+    }
+   //Todo password validation
+   else if(pwordField != verifyField){
+        errorField.innerHTML = "Make sure that the passwords match!"
+       return false;
+   }
     return true;
 }

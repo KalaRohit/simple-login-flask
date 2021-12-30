@@ -4,8 +4,8 @@
 {% block body %}
 <div class="header">
     <ul class="navBar">
-        <li class="navButtonHolder">
-            <button>Back</button>
+        <li class="navButtonHolder" style="float: left;">
+            <a class="back" href="/"> <span class="leftArrows"></span>Back</a>
         </li>
     </ul>
 </div>
@@ -13,15 +13,16 @@
     <h1>Sign Up</h1>
 </div>
 <div class="signUpBox">
-    <form name="signUpForm" id="signUpForm" onsubmit="return signUpFormValidation()">
+    <form name="signUpForm" id="signUpForm" onsubmit="return signUpFormValidation()" method="POST">
         <label>Username:</label>
-        <input type="text">
+        <input id="uname" name="uname" type="text" placeholder="Username goes here..." required maxlength="80">
         <label>Email:</label>
-        <input type="text">
+        <input id="email" name="email" type="text" placeholder="Email goes here..." required maxlength="40">
         <label>Password:</label>
-        <input type="password">
+        <input id="pword1" name="pword1" type="password" placeholder="Password goes here..." required>
         <label>Verify password:</label>
-        <input type="password">
+        <input id="pword2" name="pword2" type="password" placeholder="Re-enter password here..." required>
+        <label id="errorMessage" style="color: red;"></label>
         <input class="navGenericButton" style="width: 100%;" type="submit">
     </form>
 </div>

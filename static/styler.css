@@ -39,16 +39,7 @@ div.signIn{
     width: 80%;
 
 }
-div.purpleTransisition{
-    position: relative;
-    display: none;
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    background-color: #CD27D8;
-    z-index: 5;
 
-}
 div.purplseTransistion.fadeIn{
     transition: 1s;
     display: blocks;
@@ -59,7 +50,7 @@ div.signUpHeader{
 }
 div.signUpBox{
     display: block;
-    color: ##CFD8D8;
+    margin: auto;
     width: 500px;
     height: 500px;
 }
@@ -101,6 +92,7 @@ li.navButtonHolder{
     border-radius: 25px;
     transition: background-color 0.25s ease;
     font-size: 16px;
+    font-family: inherit;
 }
 
 .navGenericButton:hover{
@@ -126,6 +118,20 @@ li.navButtonHolder{
     cursor: pointer;
 }
 
+.backButton{
+    background-color: #32D827;
+    border: none;
+    color:white;
+    padding: 14px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition: background-color 0.25s ease;
+    font-size: 16px;
+}
+
+
 /* form input stylers */
 input[type=text]{
     display: block;
@@ -148,6 +154,7 @@ input[type=password]{
     border: none;
     border-bottom: 2px solid var(--main-color);
 }
+
 
 /* form labels */
 .formLabels{
@@ -179,8 +186,16 @@ form.signInForm{
 }
 /* a stylers */
 a.signUp{
+    background-color: #32D827;
+    border: none;
+    color:white;
+    padding: 14px 36px;
+    text-align: center;
     text-decoration: none;
-    color: white;
+    display: inline-block;
+    border-radius: 25px;
+    transition: background-color 0.25s ease;
+    font-size: 16px;
 }
 a.signUp::after{
     text-decoration: none;
@@ -191,3 +206,36 @@ a.signUp:link{
     text-decoration: none;
     color: white;
 }
+a.signUp:hover{
+    background-color: #d86e27;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.back{
+    background-color: #d3e0ec;
+    border: none;
+    color:black;
+    padding: 14px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition: background-color 0.25s ease;
+    font-size: 16px;
+}
+a.back::after{
+    text-decoration: none;
+    color: white;
+}
+
+a.back:link{
+    text-decoration: none;
+    color: white;
+}
+a.back:hover{
+    background-color: #d86e27;
+    text-decoration: underline;
+    cursor: pointer;
+}
+

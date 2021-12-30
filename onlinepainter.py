@@ -8,7 +8,10 @@ db = SQLAlchemy(app)
 class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
+    email = db.Column(db.String(40), unique=True, nullable=False)
+
+    def __repr__(self):
+        return '<User %r>' % self.id
 
     
 
@@ -26,6 +29,7 @@ def sign_up_page():
         pass
     return render_template("signUp.html")
 
+@app.route("/user/<username>")
 def user_logged_in():
     return "HelloWorld"
 
