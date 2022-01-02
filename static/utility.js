@@ -16,8 +16,7 @@ function hideForms(){
 }
 
 function signInFormValidation(){
-    console.log("test");
-    return false;
+    return true;
 
 }
 

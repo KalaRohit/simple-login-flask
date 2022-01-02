@@ -55,6 +55,7 @@ div.signUpBox{
     height: 500px;
 }
 
+
 /* ul stylers */
 ul.navBar{
     position: fixed;
@@ -178,12 +179,6 @@ form.signInForm{
     left: 35%;
 
 }
-
-.paintArea{
-    background-color: white;
-    width: 500px;
-    height: 300px;
-}
 /* a stylers */
 a.signUp{
     background-color: #32D827;
@@ -239,3 +234,10 @@ a.back:hover{
     cursor: pointer;
 }
 
+canvas{
+    display: block;
+    width: 1280px;
+    height: 720px;
+    top: 10%;
+    background-color: white;
+}
