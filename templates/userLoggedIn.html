@@ -4,8 +4,10 @@
 {% block body %}
 <div class="header">
     <ul class="navBar">
+        <li class="navButtonHolder"> 
+            <form method="POST"> <button class="navGenericButton" name="signOut" id="signOut"> Sign Out</button></form>
+        </li>
     </ul>
 </div>
 Hello there {{user}}
-<canvas id="paintArea"> </canvas>
 {% endblock %}
