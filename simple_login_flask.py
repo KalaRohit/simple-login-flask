@@ -30,7 +30,7 @@ def login_required(f):
         return f(*args, **kwargs)
     return wrap
 
-#guest page, allows one to draw but no saving.
+#guest page
 @app.route("/", methods=['GET', 'POST'])
 def no_user_page():
     if request.method == 'POST':
